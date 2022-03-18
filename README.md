@@ -25,7 +25,7 @@ OpenCV (Open Source Computer Vision Library: http://opencv.org) is an open-sourc
     - paste path of include folder of OpenCV to ***Include Directories***. The path will be similar to ```C:\opencv\build\include```.   
     - paste the internal path to ***Library Directories*** The path will look similar to ```C:\opencv\build\x64\vc15\lib```.
 4. Next, go to linker -> Input and enter the name of the library file that ends with ‘d’ in front of ***Additional Dependencies***. You will find the DLL (Dynamic Link Library) here: ```C:\opencv\build\x64\vc15\lib```, copy the name of the file, similar to ```opencv_world341d.lib```. Then, click Apply.
-5. Exit Project Properties by clicking OK
+5. Exit Project Properties by clicking OK.
 
 ## Test the code
 
