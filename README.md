@@ -14,7 +14,7 @@ OpenCV (Open Source Computer Vision Library: http://opencv.org) is an open-sourc
 
 1. Go to Advanced System Settings -> Environment Variables.
 2. Now, under the System Variables section select Path and click on Edit.
-3. Click on New and enter the path of the bin folder inside the OpenCV package. The path should be something like this (depending on your installation location) ```:C:\opencv\build\x64\vc15\bin```.
+3. Click on New and enter the path of the bin folder inside the OpenCV package. The path should be something like this (depending on your installation location) ```C:\opencv\build\x64\vc15\bin```.
 4. Press OK and exit the environment variable window clicking OK.
 
 ## Configure Visual Studio Project
