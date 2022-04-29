@@ -7,8 +7,8 @@ OpenCV (Open Source Computer Vision Library: http://opencv.org) is an open-sourc
 
 ## Download and Install OpenCV
 
-1. Download OpenCV, the latest stable release for Windows platform. Go to the official OpenCV website: https://opencv.org/ -> Library -> Releases and click on the Windows platform.
-2. Extract OpenCV in the **C directory** of your PC.
+1. Download OpenCV: \\rnas02\it_sap_tc.p\04_Software\opencv
+2. Open the .exe and extract OpenCV in the  C directory of your PC: C:\_Development\01_Software
 
 ## Set up Environment Variable
 
