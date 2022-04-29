@@ -34,26 +34,22 @@ Now to try this out, download this little test source code or get it from the sa
 In the code we open OpenCV logo (https://github.com/opencv/opencv/blob/4.x/samples/data/opencv-logo.png). Before starting up the application, make sure you place the image file in your current working directory. 
 
 ```c++
-#include <opencv2/core.hpp>
 #include <opencv2/imgcodecs.hpp>
 #include <opencv2/highgui.hpp>
 #include <iostream>
 using namespace cv;
-using namespace std;
-int main(int argc, char** argv)
+int main()
 {
-    if(argc != 2)
+ 
+    std::string image_path = samples::findFile("logo.jpg");
+    Mat image = imread("logo.jpg", IMREAD_COLOR); // Read the file
+
+    if (image.empty()) // Check for invalid input
     {
-     cout <<" Usage: " << argv[0] << " ImageToLoadAndDisplay" << endl;
-     return -1;
-    }
-    Mat image;
-    image = imread(argv[1], IMREAD_COLOR); // Read the file
-    if(image.empty()) // Check for invalid input
-    {
-        cout << "Could not open or find the image" << std::endl ;
+        std::cout << "Could not open or find the image" << std::endl;
         return -1;
     }
+
     namedWindow("Display window", WINDOW_AUTOSIZE); // Create a window for display.
     imshow("Display window", image); // Show our image inside it.
     waitKey(0); // Wait for a keystroke in the window
